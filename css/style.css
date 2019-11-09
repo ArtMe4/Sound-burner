@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:300,800&display=swap&subset=cyrillic-ext');
+
+body {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 16px;
+  background: white;
+  color: #000;
+}
+
+header {
+  width: 100%;
+  background: #F8F8F8;
+  box-shadow: 2px 4px 6px rgba(194, 192, 192, 0.25);
+  padding-top: : 10px;
+  padding-bottom: 15px;
+}
+
+header .all-header {
+  width: 70%;
+  margin: 0 15%;
+}
+
+@media (min-width: 1571px) {
+  header .all-header {
+    width: 70%;
+    margin: 0 15%;
+  }
+}
+
+@media (max-width: 1571px) and  (min-width: 1111px) {
+  header .all-header {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 1110px) (min-width: 921px) {
+  header .all-header {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+}
+
+@media (max-width: 920px) {
+  header .all-header {width: 100%; margin-left: 5%;}
+  header .all-header .header-main {flex-direction: column}
+}
+
+header .all-header .lang {
+  text-align: right;
+  width: 100%;
+}
+
+header .all-header .lang a {
+  font-size: 14px;
+  color: #C4C4C4;
+  font-weight: 800;
+}
+
+header .all-header .lang a.active,
+header .all-header .lang a:hover {
+  color: #000;
+  border-bottom: 2px solid #000;
+  margin-left: 5px;
+}
+
+header .all-header .header-main {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .all-header .header-main img {
+  height: 30px;
+
+}
+
+#search {
+  border: 0;
+  background: #ECECEC;
+  width: 360px;
+  height: 34px;
+  font-weight: 300;
+  font-size: 12px;
+  text-indent: 20px;
+  outline: none;
+}
+
+header .all-header .header-main a {
+
+  color: #000;
+  font-weight: 800;
+}
+
+header .all-header .header-main a:hover {color: #ccc}
+
+header .all-header .header-main .bth {
+  cursor: pointer;
+  height: 30px;
+  font-weight: 800;
+  border: 2px solid #000;
+  text-align: center;
+  line-height: 30px;
+  transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+header .all-header .header-main .bth.reg {
+  width: 140px
+}
+
+header .all-header .header-main .bth.auth {
+  width: 86px;
+}
+
+header .all-header .header-main .bth.reg,
+header .all-header .header-main .bth.auth:hover {
+  background: #000;
+  color: #fff;
+}
+
+header .all-header .header-main .bth.reg:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Основная часть сайта */
+
+main {
+  width: 100%;
+}
+
+main .section {
+  width: 70%;
+  margin: 50px 15%;
+}
+
+main .section h3 {
+  font-size: 24px;
+}
+
+main .section h3 span {
+  height: 2px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 40px;
+  margin-bottom: 7px;
+  width: 30px;
+  background: #000;
+}
+
+main .section .flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .section .img-block {
+  width: 28%;
+  margin: 20px 0;
+  position: relative;
+}
+
+@media (max-width: 955px) {
+  main .section .flex-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .section .img-block {width: 100%}
+}
+
+main .section .img-block img {
+  width: 100%
+}
+
+main .section .img-block h4 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+main .section .img-block p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+main .section .img-block:hover .button-play{opacity: 1}
+
+main .section .img-block .button-play {
+  background-color: #000;
+  color: yellow;
+  padding: 20px;
+  border: 0;
+  border-radius: 3px;
+  position: absolute;
+  right: -30px;
+  bottom: 80px;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+}
+
+/* Футер */
+
+footer {
+  width: 94.05%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  font-weight: 300;
+}
